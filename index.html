@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <!--Fonts-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrimba Password Generator</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <div id="password-app">
+        <div id="description-block">
+            <h1>Generate a random password</h1>
+            <p>Never use an insecure password.</p>
+        </div>
+        <div id="options">     
+            <button id="generate">Generate passwords</button>
+            <label for="pass-length">Password Length</label>
+            <input type="number" name="pass-length" id="pass-length">
+            <label for="special-signs">Special signs</label>
+            <input type="checkbox" name="special-signs" id="special-signs">
+            <label for="uppercase-letter">Uppercase Letters</label>
+            <input type="checkbox" name="uppercase-letters" id="uppercase-letters">
+        </div>
+        <div id="results">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+            <div id="fourth"></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
