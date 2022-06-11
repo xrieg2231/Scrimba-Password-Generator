@@ -1,7 +1,16 @@
-var allChars = [];
-for (var i=32; i<127; i++)
-    allChars.push(String.fromCharCode(i));
+var signsChars = "!@#$%^&*()";
+var numbersChars = "0123456789";
+var lettersUpperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lettersLowerChars = "abcdefghijklmnopqrstuvwxyz";
+var chars = signsChars + numbersChars + lettersLowerChars + lettersUpperChars;
+
 
 function generate(){
-    
+    var password = "";
+    var passLength = document.getElementById("pass-length").value - 1;
+    for (var i = 0; i <= passLength; i++){
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randomNumber, randomNumber + 1);
+    }
+    document.getElementById("firstPass").innerHTML = password;
 }
